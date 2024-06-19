@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juliana Lela Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 </head>
 <body>
-    Hello
+    <nav id="desktop-nav">
+        <div class="logo">Juliana Lela Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Juliana Lela Portfolio</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/juliejl.png" alt="Juliana Lela Profile pic ">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1"> Hello, I'm</p>
+        <h1 class="title"> Juliana Lela</h1>
+    <p class="section_text_p2"> UX designer </p>
+    <div class="btn-container"> 
+        <button 
+            class="btn btn-colo-2" 
+            onclick="window.open('./assets/Juliana Lela cv24.pdf')"> 
+            Download Cv
+            </button>
+            <button 
+            class="btn btn color-1" onclick="location.href='./#contact'"> Contact Info
+        </button> 
+    </div>
+    <div>
+        <div id="social-container"> 
+            <img src="./assets/linkedin.png" alt="linkedin profile"
+            class="icon" onclick="location.href='https://www.linkedin.com/in/julianajulielela'"">
+        </div>
+        <div id="social-container"> 
+            <img src="./assets/program.png" alt="github profile"
+            class="icon" onclick="location.href='https://github.com/RadJL01'"">
+        </div>
+    </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
